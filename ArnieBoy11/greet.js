@@ -2,6 +2,6 @@ exports.greet = function( player ) {
     echo( player, 'Hi ' + player.name);
 }
 
-function getScore(player){
+exports.getScore = function(player){
   return scoreboard[ player ];
 }
