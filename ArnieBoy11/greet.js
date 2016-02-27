@@ -5,17 +5,17 @@ exports.greet = function( player ) {
 exports.getScore = function(player){
   return scoreboard[ player ];
 }
-exports.block = function(){
-    var d = box( blocks.oak )
-              .up()
-              .box( blocks.oak ,3,1,3)
-              .down()
-              .fwd(2)
-              .box( blocks.oak )
-              .turn()
-              .fwd(2)
-              .box( blocks.oak )
-              .turn()
-              .fwd(2)
-              .box( blocks.oak );
+function main(){
+var d = box( blocks.oak )
+          .up()
+          .box( blocks.oak ,3,1,3)
+          .down()
+          .fwd(2)
+          .box( blocks.oak )
+          .turn()
+          .fwd(2)
+          .box( blocks.oak )
+          .turn()
+          .fwd(2)
+          .box( blocks.oak );
 }
